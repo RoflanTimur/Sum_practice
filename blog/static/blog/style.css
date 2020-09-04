@@ -1,0 +1,8 @@
+.inner {
+  display: flex;
+  justify-content: center;
+  color: #951256;
+  padding: 0 calc(50% - 590px);
+  margin-left: auto;
+  margin-right: auto;
+}
