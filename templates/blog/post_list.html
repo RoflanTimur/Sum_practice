@@ -8,10 +8,12 @@
     <h1>Главная</h1>
 
 {% for post in posts %}
-    <div>
-        <h1 align="center"><a href="">{{ post.title }}</a></h1>
+    <div class="post">
+        <h1 align="center"><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
         <p align="center">{{ post.text|linebreaksbr }}</p>
-        <p align="center">published: {{ post.published_date }}</p>
+        <div class="date">
+            <p align="center">Опубликовано: {{ post.published_date }}</p>
+        </div>
     </div>
 {% endfor %}
 {% endblock %}
